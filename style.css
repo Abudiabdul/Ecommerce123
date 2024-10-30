@@ -1,0 +1,585 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+}
+/* nav  */
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.cart-button .icon {
+    width: 20px;  /* Set a smaller width */
+    height: 20px; /* Set a smaller height */
+}
+
+
+
+
+.container{
+    max-width: 1300px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+
+}.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.btn, .add-to-cart-btn {
+    display: inline-block;
+    background: #f57134;
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn:hover, .add-to-cart-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(249, 130, 11, 0.6);
+}
+
+/* Adjust the margin for the Add to Cart button */
+.add-to-cart-btn {
+    margin: 10px 0;
+}
+
+.header{
+    background: radial-gradient(#f7c388,#f08d14);
+}
+.header .row .col-2 h1{
+    margin-left: 40px;
+}
+.header .row .col-2 h3{
+    margin-left: 40px;
+}
+.header .row .col-2 .btn{
+    margin-left: 40px;
+}
+
+
+
+/* fEATURES */
+.catagories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px; 
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin:auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4 {
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+}
+
+.col-4:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.col-4 img{
+    width: 100%;
+}
+.title{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+}
+.title::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.title1{
+    text-align: center;
+    margin: 0 auto 80px;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+
+}
+.title1::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px ;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .bi{
+    color: #ff523b;
+}
+
+/* -----------------------offer---------------- */
+.offer{
+    background: radial-gradient(#555,#2e2e2c);
+    color: #fff;
+    margin-top: 100px;
+    padding: 30px 0;
+}
+.col-2 .offer-img{
+    padding: 50px;
+}
+
+/* ----------testimonial-------- */
+.testimonial{
+    padding: 100px;
+}
+.testimonial .col-3{
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: transform  0.5s ease-in-out;
+    justify-content: center;
+
+
+}
+.testimonial .col-3 img{
+    width: 50px;
+    margin-top: 20px;
+    border-radius: 50%;
+}
+.testimonial .col-3:hover {
+    transform: scale(1.05); /* Slightly increase the size */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a shadow effect */
+    transition: all 0.3s ease; /* Smooth transition */
+}
+.testimonial .col-3 .bi{
+    
+        color: #ff523b;
+        size: 40px;
+}
+/* --------------brands------------------ */
+.brands{
+    margin: 70px 0;
+}
+.col-5{
+    width: 160px;
+}
+.col-5 img{
+    width: 100%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-5 img:hover{
+    filter: grayscale(0%);
+}
+
+/* --------------------footer------------------- */
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding: 60px 0 20px;
+}
+.footer p{
+    color: #8a8a8a;
+
+}
+.footer h3{
+    color: #8a8a8a;
+}
+.footer-col-1 , .footer-col-2 ,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex:1;
+    text-align: center;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}.app-logo{
+    margin-top: 20px;
+}
+.app-logo img{
+    width: 140px;
+}
+.footer hr{
+    border: none;
+    background: #b5b5b5;
+    height: 1px;
+    margin: 20px 0;
+}
+.Copyright{
+    text-align: center;
+}
+
+/* ---------------------Media query --------------------- */ 
+
+.navbar .bi {
+    width: 18px;
+    margin-left: 20px;
+    
+}
+.navbar #menu{
+    width: 18px;
+    margin-left: 20px;
+    display: none;
+}
+@media only screen and (max-width:870px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: #333;
+        width: 100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin-right: 50px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    nav ul li a{
+        color: #fff;
+
+    }
+    .navbar #menu {
+        display: block;
+        cursor: pointer;
+    }
+    
+}
+/* media query for phones */
+@media only screen and (max-width:600px){
+    .row{text-align: center;
+    }
+    .col-2,.col-4{
+        flex-basis: 100%;
+        justify-content: center;
+       
+    }
+    .single-product .row{
+        text-align: left;
+    }
+    .single-product .col-2{
+        padding: 20px 0;
+    }
+    .cart-info{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width:300px){
+    .row{text-align: center;
+    }
+    .col-2,.col-3,.col-4{
+        flex-basis: 100%;
+        justify-content: center;
+        
+        
+    }
+    
+    
+}
+.page-btn{
+    margin: 0 auto 80px;
+
+}
+.page-btn span{
+    display: inline-block;
+    border: 1px solid #ff523b;
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+}
+.page-btn span:hover{
+    background: #ff523b;
+    color: white;
+    transform: scale(1.05);
+    transition: ease-in-out 0.3s;
+}
+
+/* --------------------single product details------------------  */
+
+.single-product{
+    margin-top: 80px;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.single-product h4{
+    margin: 20px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+
+}
+input:focus{
+    outline: none;
+}
+.cart-page{
+    margin-top: 80px auto;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+.cart-info{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    text-align: left;
+    padding: 5px;
+    color: white;
+    background: #ff523b;
+    font-weight: normal;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: #ff523b;
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    
+}
+.total-price{
+    display: flex;
+    justify-content: flex-end;
+}
+.total-price table{
+    border-top: 3px solid #ff523b;
+    width: 100%;
+    max-width: 400px;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+/* Add these new styles */
+.product-link {
+    text-decoration: none;
+    color: inherit;
+    display: contents;
+}
+
+.product-link:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.added-to-cart-feedback {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f57134;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.3s, transform 0.3s;
+    z-index: 1000;
+}
+
+.added-to-cart-feedback.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.added-to-cart-feedback img {
+    margin-right: 10px;
+    border-radius: 3px;
+}
+
+.added-to-cart-feedback p {
+    margin: 0;
+    color: white;
+}
+
+/* Add these styles to your style.css file */
+
+/* Default nav styles */
+nav ul li a {
+    position: relative;
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+/* White hover effect for index.html */
+.header nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.header nav ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.header nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Orange hover effect for other pages */
+.other-pages nav ul li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    background: #ff523b;
+    transform: translateX(-50%);
+    transition: width 0.3s ease;
+    box-shadow: 0 0 8px rgba(255, 82, 59, 0.5);
+}
+
+.other-pages nav ul li a:hover {
+    color: #ff523b;
+    text-shadow: 0 0 10px rgba(255, 82, 59, 0.2);
+}
+
+.other-pages nav ul li a:hover::after {
+    width: 100%;
+}
+
+/* Remove any existing button-like styles */
+nav ul li a {
+    background: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Add these styles for star ratings */
+.rating {
+    color: #ff523b;
+    font-size: 15px;
+    margin: 8px 0;
+}
+
+.rating i {
+    margin-right: 2px;
+}

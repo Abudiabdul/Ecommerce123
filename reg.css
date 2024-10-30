@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    
+        font-family: poppins;
+    
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+}
+
+.form-section {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-section h2 {
+    text-align: center;
+    color: #35424a;
+}
+
+.form-group {
+    margin: 15px 0;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease; /* Transition for input border */
+}
+
+.form-group input:focus {
+    border-color: #ff8c00; /* Change border color on focus */
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background: #ff8c00; /* Orange color */
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transition effects */
+}
+
+.btn:hover {
+    background: #e07b00; /* Darker orange */
+    transform: scale(1.05); /* Slightly grow the button */
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #35424a;
+    background: radial-gradient(#f7c388,#f08d14);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px; /* Space above footer */
+}
+
+.optional {
+    display: none; /* Initially hide optional fields */
+}
+
+.hidden {
+    display: none; /* Class to hide elements */
+}
